@@ -641,4 +641,20 @@ button {
     .data {
         flex-direction: column;
     }
+
+    .ui {
+        padding: 50px 30px;
+    }
+
+    .services {
+        padding-bottom: 0px;
+    }
+
+    .sponsers {
+        padding-bottom: 30px;
+    }
+
+    .design {
+        padding-bottom: 40px;
+    }
 }
