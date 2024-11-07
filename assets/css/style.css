@@ -505,6 +505,26 @@ button {
         max-width: 390px;
     }
 
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-flex {
+        padding: 40px 0px;
+    }
+
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .round {
+        padding: 50px 0px;
+    }
+
+    .details h4 {
+        font-size: 28px;
+    }
+
     .idea {
         flex-direction: column;
     }
@@ -583,5 +603,42 @@ button {
 
     .hero-text {
         width: 100%;
+    }
+
+    .hero-flex {
+        padding: 50px 0px 70px;
+    }
+
+    .hero h1 {
+        font-size: 80px;
+    }
+
+    .details h4 {
+        font-size: 28px;
+    }
+
+    .button button {
+        font-size: 14px;
+        padding: 12px 30px;
+    }
+
+    .services h2 {
+        font-size: 35px;
+    }
+
+    .services {
+        padding: 60px 0px;
+    }
+
+    .talk h2 {
+        font-size: 35px;
+    }
+
+    .ftr-logo {
+        padding: 50px 0px;
+    }
+
+    .data {
+        flex-direction: column;
     }
 }
