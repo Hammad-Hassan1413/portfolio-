@@ -5,7 +5,8 @@ const target1 = 3;
 const target2 = 34;
 const target3 = 24;
 
-const duration = 2000; const increment1 = target1 / (duration / 50);
+const duration = 2000;
+const increment1 = target1 / (duration / 50);
 const increment2 = target2 / (duration / 50);
 const increment3 = target3 / (duration / 50);
 
@@ -14,7 +15,7 @@ function animateCountUp(element, target, increment) {
     const updateCount = () => {
         count += increment;
         if (count >= target) {
-            element.textContent = Math.ceil(target); // Ensure it hits the target
+            element.textContent = Math.ceil(target);
         } else {
             element.textContent = Math.ceil(count);
             setTimeout(updateCount, 50);
@@ -23,7 +24,6 @@ function animateCountUp(element, target, increment) {
     updateCount();
 }
 
-// Start animations
 animateCountUp(count1, target1, increment1);
 animateCountUp(count2, target2, increment2);
 animateCountUp(count3, target3, increment3);
