@@ -40,12 +40,11 @@ function typeAndErase() {
 
     const interval = setInterval(() => {
         if (isTyping) {
-            skillElement.classList.add("visible");
             skillElement.textContent = text.slice(0, charIndex + 1);
             charIndex++;
             if (charIndex === text.length) {
                 isTyping = false;
-                setTimeout(() => (isTyping = false), 100);
+                setTimeout(() => (isTyping = false), 70);
             }
         } else {
             skillElement.textContent = text.slice(0, charIndex - 1);
@@ -55,10 +54,27 @@ function typeAndErase() {
                 isTyping = true;
                 textIndex = (textIndex + 1) % texts.length;
                 text = texts[textIndex];
-                setTimeout(() => skillElement.classList.add("visible"), 300);
             }
         }
-    }, 70);
+    }, 50);
 }
 
 typeAndErase();
+
+document.getElementById('about-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('education').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+    });
+});
+
+document.getElementById('projects-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('brands').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+    });
+});

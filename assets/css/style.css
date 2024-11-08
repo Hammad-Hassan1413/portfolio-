@@ -148,6 +148,12 @@ ul a {
     gap: 15px;
     min-width: 180px;
     transition: .3s all ease-in-out;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background-color: #096A61;
+    color: white;
 }
 
 .card img {
@@ -275,6 +281,7 @@ button {
     background-color: #fbfcfc;
     border-radius: 12px;
     border: none;
+    transition: .3s all ease-in-out;
 }
 
 .services {
