@@ -60,21 +60,14 @@ function typeAndErase() {
 }
 
 typeAndErase();
-
-document.getElementById('about-link').addEventListener('click', function (event) {
-    event.preventDefault();
-    document.getElementById('education').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
-    });
-});
-
-document.getElementById('projects-link').addEventListener('click', function (event) {
-    event.preventDefault();
-    document.getElementById('brands').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
+document.querySelectorAll('#about-link, #projects-link').forEach(link => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetId = link.id === 'about-link' ? 'education' : 'brands';
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
     });
 });
