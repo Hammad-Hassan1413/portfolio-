@@ -97,7 +97,7 @@ ul a {
 
 .hero-text p {
     font-size: 22px;
-    color: #999;
+    color: #3c3939;
 }
 
 .image {
@@ -140,7 +140,7 @@ ul a {
 
 .card {
     padding: 45px 30px;
-    border: 1.5px solid #999;
+    border: 1.5px solid #3c3939;
     border-radius: 40px;
     align-items: center;
     display: flex;
@@ -175,7 +175,7 @@ ul a {
 
 .card h5 {
     font-size: 30px;
-    color: #999;
+    color: #3c3939;
 }
 
 .brands {
@@ -244,7 +244,7 @@ button {
 }
 
 .right p {
-    color: #999;
+    color: #3c3939;
     font-weight: 300;
     padding-top: 10px;
 }
@@ -301,7 +301,7 @@ button {
 .ui {
     padding: 70px 50px;
     border-radius: 20px;
-    border: 1.5px solid #999;
+    border: 1.5px solid #3c3939;
     transition: .3s all ease-in-out;
 }
 
